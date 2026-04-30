@@ -1,0 +1,15 @@
+import { jsx as _jsx } from "react/jsx-runtime";
+import * as React from "react";
+import * as AvatarPrimitive from "@radix-ui/react-avatar";
+import { cva } from "class-variance-authority";
+import { cn } from "@/lib/utils";
+const avatarVariants = cva("relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full");
+const Avatar = React.forwardRef(({ className, ...props }, ref) => (_jsx(AvatarPrimitive.Root, { ref: ref, className: cn(avatarVariants(props), className), ...props })));
+Avatar.displayName = AvatarPrimitive.Root.displayName;
+const avatarImageVariants = cva("aspect-square h-full w-full");
+const AvatarImage = React.forwardRef(({ className, ...props }, ref) => (_jsx(AvatarPrimitive.Image, { ref: ref, className: cn(avatarImageVariants(props), className), ...props })));
+AvatarImage.displayName = AvatarPrimitive.Image.displayName;
+const avatarFallbackVariants = cva("flex h-full w-full items-center justify-center rounded-full bg-muted");
+const AvatarFallback = React.forwardRef(({ className, ...props }, ref) => (_jsx(AvatarPrimitive.Fallback, { ref: ref, className: cn(avatarFallbackVariants(props), className), ...props })));
+AvatarFallback.displayName = AvatarPrimitive.Fallback.displayName;
+export { Avatar, AvatarImage, AvatarFallback, avatarVariants, avatarImageVariants, avatarFallbackVariants };
