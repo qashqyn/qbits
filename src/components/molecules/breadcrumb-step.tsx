@@ -1,8 +1,8 @@
 import * as React from "react"
 import { cva } from "class-variance-authority"
 import { cn, type ExtendableVariants } from "@/lib/utils"
-import { Text } from "@/components/atoms/text"
-import { Separator } from "@/components/atoms/separator"
+import { Text } from "@/components/atoms"
+import { Separator } from "@/components/atoms"
 import { ChevronRight } from "lucide-react"
 
 const breadcrumbStepVariants = cva("flex items-center gap-2")

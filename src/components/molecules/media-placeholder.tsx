@@ -1,7 +1,7 @@
 import * as React from "react"
 import { cva } from "class-variance-authority"
 import { cn, type ExtendableVariants } from "@/lib/utils"
-import { Skeleton } from "@/components/atoms/skeleton"
+import { Skeleton } from "@/components/atoms"
 
 const mediaPlaceholderVariants = cva("flex items-center gap-4")
 

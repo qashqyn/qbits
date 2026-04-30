@@ -1,8 +1,8 @@
 import * as React from "react"
 import { cva } from "class-variance-authority"
 import { cn, type ExtendableVariants } from "@/lib/utils"
-import { Label } from "@/components/atoms/label"
-import { RadioGroup } from "@/components/atoms/radio-group"
+import { Label } from "@/components/atoms"
+import { RadioGroup } from "@/components/atoms"
 
 const radioFieldGroupVariants = cva("flex flex-col gap-3")
 

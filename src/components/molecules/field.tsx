@@ -1,8 +1,8 @@
 import * as React from "react"
 import { cva } from "class-variance-authority"
 import { cn, type ExtendableVariants } from "@/lib/utils"
-import { Label } from "@/components/atoms/label"
-import { Text } from "@/components/atoms/text"
+import { Label } from "@/components/atoms"
+import { Text } from "@/components/atoms"
 
 const fieldVariants = cva("flex w-full flex-col gap-1.5")
 

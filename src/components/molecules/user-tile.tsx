@@ -1,9 +1,9 @@
 import * as React from "react"
 import { cva } from "class-variance-authority"
 import { cn, type ExtendableVariants } from "@/lib/utils"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/atoms/avatar"
-import { Heading } from "@/components/atoms/heading"
-import { Text } from "@/components/atoms/text"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/atoms"
+import { Heading } from "@/components/atoms"
+import { Text } from "@/components/atoms"
 
 const userTileVariants = cva("flex items-center gap-3")
 

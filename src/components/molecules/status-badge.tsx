@@ -1,7 +1,7 @@
 import * as React from "react"
 import { cva } from "class-variance-authority"
 import { cn, type ExtendableVariants } from "@/lib/utils"
-import { Badge, type BadgeProps } from "@/components/atoms/badge"
+import { Badge, type BadgeProps } from "@/components/atoms"
 
 const statusBadgeVariants = cva("inline-flex items-center gap-2")
 

@@ -1,8 +1,8 @@
 import * as React from "react"
 import { cva } from "class-variance-authority"
 import { cn, type ExtendableVariants } from "@/lib/utils"
-import { Kbd } from "@/components/atoms/kbd"
-import { Text } from "@/components/atoms/text"
+import { Kbd } from "@/components/atoms"
+import { Text } from "@/components/atoms"
 
 const kbdShortcutVariants = cva("flex items-center gap-2")
 

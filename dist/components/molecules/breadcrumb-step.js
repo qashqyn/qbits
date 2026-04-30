@@ -2,8 +2,8 @@ import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import * as React from "react";
 import { cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
-import { Text } from "@/components/atoms/text";
-import { Separator } from "@/components/atoms/separator";
+import { Text } from "@/components/atoms";
+import { Separator } from "@/components/atoms";
 import { ChevronRight } from "lucide-react";
 const breadcrumbStepVariants = cva("flex items-center gap-2");
 const BreadcrumbStep = React.forwardRef(({ className, label, isLast = false, active = false, useIcon = true, ...props }, ref) => {

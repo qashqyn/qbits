@@ -1,9 +1,9 @@
 import * as React from "react"
 import { cva } from "class-variance-authority"
 import { cn, type ExtendableVariants } from "@/lib/utils"
-import { Heading } from "@/components/atoms/heading"
-import { Text } from "@/components/atoms/text"
-import { Button } from "@/components/atoms/button"
+import { Heading } from "@/components/atoms"
+import { Text } from "@/components/atoms"
+import { Button } from "@/components/atoms"
 
 const emptyStateVariants = cva("flex flex-col items-center justify-center gap-2 rounded-lg border border-dashed p-8 text-center animate-in fade-in-50")
 

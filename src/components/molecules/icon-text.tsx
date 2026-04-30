@@ -1,7 +1,7 @@
 import * as React from "react"
 import { cva } from "class-variance-authority"
 import { cn, type ExtendableVariants } from "@/lib/utils"
-import { Text } from "@/components/atoms/text"
+import { Text } from "@/components/atoms"
 
 const iconTextVariants = cva("inline-flex items-center gap-2")
 

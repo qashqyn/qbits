@@ -1,9 +1,9 @@
 import * as React from "react"
 import { cva } from "class-variance-authority"
 import { cn, type ExtendableVariants } from "@/lib/utils"
-import { Heading } from "@/components/atoms/heading"
-import { Text } from "@/components/atoms/text"
-import { IconButton } from "@/components/atoms/icon-button"
+import { Heading } from "@/components/atoms"
+import { Text } from "@/components/atoms"
+import { IconButton } from "@/components/atoms"
 import { X } from "lucide-react"
 
 const alertTileVariants = cva(
