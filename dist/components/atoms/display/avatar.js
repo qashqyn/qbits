@@ -2,7 +2,7 @@ import { jsx as _jsx } from "react/jsx-runtime";
 import * as React from "react";
 import * as AvatarPrimitive from "@radix-ui/react-avatar";
 import { cva } from "class-variance-authority";
-import { cn } from "@/lib/utils";
+import { cn } from "../../../lib/utils";
 const avatarVariants = cva("relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full");
 const Avatar = React.forwardRef(({ className, ...props }, ref) => (_jsx(AvatarPrimitive.Root, { ref: ref, className: cn(avatarVariants(props), className), ...props })));
 Avatar.displayName = AvatarPrimitive.Root.displayName;

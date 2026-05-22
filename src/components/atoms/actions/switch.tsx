@@ -16,7 +16,7 @@ const Switch = React.forwardRef<
   SwitchProps
 >(({ className, ...props }, ref) => (
   <SwitchPrimitives.Root
-    className={cn(switchVariants(props as any), className)}
+    className={cn(switchVariants(), className)}
     {...props}
     ref={ref}
   >

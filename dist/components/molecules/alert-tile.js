@@ -1,10 +1,10 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import * as React from "react";
 import { cva } from "class-variance-authority";
-import { cn } from "@/lib/utils";
-import { Heading } from "@/components/atoms";
-import { Text } from "@/components/atoms";
-import { IconButton } from "@/components/atoms";
+import { cn } from "../../lib/utils";
+import { Heading } from "../../components/atoms";
+import { Text } from "../../components/atoms";
+import { IconButton } from "../../components/atoms";
 import { X } from "lucide-react";
 const alertTileVariants = cva("relative w-full rounded-lg border p-4 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-3px] [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-foreground", {
     variants: {

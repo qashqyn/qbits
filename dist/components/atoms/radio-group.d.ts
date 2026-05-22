@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as RadioGroupPrimitive from "@radix-ui/react-radio-group";
-import { type ExtendableVariants } from "@/lib/utils";
+import { type ExtendableVariants } from "../../lib/utils";
 declare const radioGroupVariants: (props?: import("class-variance-authority/types").ClassProp | undefined) => string;
 export interface RadioGroupProps extends React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Root>, ExtendableVariants<typeof radioGroupVariants> {
 }

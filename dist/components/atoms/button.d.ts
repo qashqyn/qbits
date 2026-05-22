@@ -1,5 +1,5 @@
 import * as React from "react";
-import { type ExtendableVariants } from "@/lib/utils";
+import { type ExtendableVariants } from "../../lib/utils";
 declare const buttonVariants: (props?: ({
     variant?: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link" | null | undefined;
     size?: "default" | "sm" | "lg" | "icon" | null | undefined;

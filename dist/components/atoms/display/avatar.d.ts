@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as AvatarPrimitive from "@radix-ui/react-avatar";
-import { type ExtendableVariants } from "@/lib/utils";
+import { type ExtendableVariants } from "../../../lib/utils";
 declare const avatarVariants: (props?: import("class-variance-authority/types").ClassProp | undefined) => string;
 export interface AvatarProps extends React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Root>, ExtendableVariants<typeof avatarVariants> {
 }

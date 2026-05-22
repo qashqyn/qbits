@@ -2,7 +2,7 @@ import { jsx as _jsx } from "react/jsx-runtime";
 import * as React from "react";
 import * as SeparatorPrimitive from "@radix-ui/react-separator";
 import { cva } from "class-variance-authority";
-import { cn } from "@/lib/utils";
+import { cn } from "../../lib/utils";
 const separatorVariants = cva("shrink-0 bg-border", {
     variants: {
         orientation: {

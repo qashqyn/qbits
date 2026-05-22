@@ -1,8 +1,7 @@
-import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { Button } from "./button";
-import { Mail } from "lucide-react";
 const meta = {
-    title: "Atoms/Button",
+    title: "Atoms/Actions/Button",
     component: Button,
     parameters: {
         layout: "centered",
@@ -24,12 +23,12 @@ const meta = {
             control: "select",
             options: ["default", "sm", "lg", "icon"],
         },
-        asChild: {
-            control: "boolean",
-        },
     },
 };
 export default meta;
+/**
+ * The default interactive button.
+ */
 export const Default = {
     args: {
         children: "Button",
@@ -37,26 +36,25 @@ export const Default = {
         size: "default",
     },
 };
-export const Destructive = {
-    args: {
-        children: "Destructive",
-        variant: "destructive",
-    },
+/**
+ * A showcase of all button variants in a single view.
+ */
+export const AllVariants = {
+    render: () => (_jsxs("div", { className: "flex flex-wrap items-center gap-4", children: [_jsx(Button, { variant: "default", children: "Default" }), _jsx(Button, { variant: "secondary", children: "Secondary" }), _jsx(Button, { variant: "destructive", children: "Destructive" }), _jsx(Button, { variant: "outline", children: "Outline" }), _jsx(Button, { variant: "ghost", children: "Ghost" }), _jsx(Button, { variant: "link", children: "Link" })] })),
 };
-export const Outline = {
+/**
+ * A showcase of all button sizes.
+ */
+export const AllSizes = {
+    render: () => (_jsxs("div", { className: "flex flex-wrap items-end gap-4", children: [_jsx(Button, { size: "sm", children: "Small" }), _jsx(Button, { size: "default", children: "Default" }), _jsx(Button, { size: "lg", children: "Large" }), _jsx(Button, { size: "icon", children: _jsx("span", { children: "+" }) })] })),
+};
+/**
+ * Demonstrating the 'asChild' property (Radix Slot) using an anchor tag.
+ */
+export const AsChild = {
     args: {
-        children: "Outline",
+        asChild: true,
+        children: _jsx("a", { href: "https://github.com", children: "GitHub Link" }),
         variant: "outline",
-    },
-};
-export const WithIcon = {
-    args: {
-        children: (_jsxs(_Fragment, { children: [_jsx(Mail, { className: "mr-2 h-4 w-4" }), " Login with Email"] })),
-    },
-};
-export const IconButton = {
-    args: {
-        size: "icon",
-        children: _jsx(Mail, { className: "h-4 w-4" }),
     },
 };

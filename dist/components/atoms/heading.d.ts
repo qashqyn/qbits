@@ -1,5 +1,5 @@
 import * as React from "react";
-import { type ExtendableVariants } from "@/lib/utils";
+import { type ExtendableVariants } from "../../lib/utils";
 declare const headingVariants: (props?: ({
     level?: "h2" | "h3" | "h1" | "h4" | "h5" | "h6" | null | undefined;
 } & import("class-variance-authority/types").ClassProp) | undefined) => string;
